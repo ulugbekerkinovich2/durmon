@@ -19,4 +19,4 @@ class ContactSerializer(serializers.ModelSerializer):
             requests.get(
                 url=f"https://api.telegram.org/bot5352054350:AAEU5Jd2rTODHvxIAfzPtWrSAee6WMgI9A0/sendMessage?chat_id={i}&parse_mode=HTML&text={object}")
 
-            return object
+        return object
