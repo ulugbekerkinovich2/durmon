@@ -14,7 +14,7 @@ class ContactSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         object = models.Contact.objects.create(**validated_data)
         print(object)
-        chats = [935920479, -100602275265]
+        chats = [935920479,  -1001501012036]
         for i in chats:
             requests.get(
                 url=f"https://api.telegram.org/bot5352054350:AAEU5Jd2rTODHvxIAfzPtWrSAee6WMgI9A0/sendMessage?chat_id={i}&parse_mode=HTML&text={object}")
