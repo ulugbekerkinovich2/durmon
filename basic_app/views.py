@@ -15,3 +15,13 @@ class ListContact(generics.ListCreateAPIView):
 class DetailContact(generics.RetrieveUpdateDestroyAPIView):
     queryset = models.Contact.objects.all()
     serializer_class = serializers.ContactSerializer
+
+
+class ListBoglanish(generics.ListCreateAPIView):
+    queryset = models.Boglanish.objects.all()
+    serializer_class = serializers.BoglanishSerializer
+
+
+class DetailBoglanish(generics.RetrieveUpdateDestroyAPIView):
+    queryset = models.Boglanish.objects.all()
+    serializer_class = serializers.BoglanishSerializer

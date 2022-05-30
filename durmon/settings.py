@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'basic_app',
     'rest_framework',
+    # 'phone_field',
 ]
 
 CORS_ALLOWED_ORIGINS = [
