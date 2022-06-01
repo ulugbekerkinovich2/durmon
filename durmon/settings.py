@@ -27,10 +27,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_cleanup',
-    'corsheaders',
+
     'basic_app',
     'rest_framework',
-    # 'phone_field',
+    'corsheaders',
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -41,7 +41,11 @@ CORS_ALLOWED_ORIGINS = [
 
     "https://durmonavenue.uz",
     "https://durman.uz",
-    "https://durmon.uz"
+    "https://durmon.uz",
+
+    "http://durmonavenue.uz",
+    "http://durman.uz",
+    "http://durmon.uz",
 
 ]
 
