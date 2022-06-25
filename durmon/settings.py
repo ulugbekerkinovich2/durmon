@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
 ]
+# pip install django-cors-headers
 
 CORS_ALLOWED_ORIGINS = [
 

@@ -8,6 +8,7 @@ from basic_app import models, serializers
 
 
 class ListContact(generics.ListCreateAPIView):
+
     queryset = models.Contact.objects.all()
     serializer_class = serializers.ContactSerializer
 
@@ -18,6 +19,10 @@ class DetailContact(generics.RetrieveUpdateDestroyAPIView):
 
 
 class ListBoglanish(generics.ListCreateAPIView):
+    permission_classes = []
+    authentication_classes = []
+
+
     queryset = models.Boglanish.objects.all()
     serializer_class = serializers.BoglanishSerializer
 
